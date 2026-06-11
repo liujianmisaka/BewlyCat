@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 
+import { settings } from '~/logic'
 import { calcTimeSince, numFormatter } from '~/utils/dataFormatter'
 
 import type { Video } from '../types'
+import { isVideoCardRecommendTag } from '../utils'
 import VideoCardAuthorAvatar from '../VideoCardAuthor/components/VideoCardAuthorAvatar.vue'
 import VideoCardAuthorName from '../VideoCardAuthor/components/VideoCardAuthorName.vue'
 
@@ -40,9 +42,13 @@ const primaryTags = computed(() => {
   if (!tag)
     return []
   if (Array.isArray(tag))
-    return tag.filter(Boolean)
-  return [tag]
+    return tag.filter(Boolean).filter(shouldShowPrimaryTag)
+  return shouldShowPrimaryTag(tag) ? [tag] : []
 })
+
+function shouldShowPrimaryTag(tag: string) {
+  return settings.value.showVideoCardRecommendTag || !isVideoCardRecommendTag(tag)
+}
 
 const MAX_LEADING_TAG_COUNT = 2
 

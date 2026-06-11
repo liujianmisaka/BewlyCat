@@ -219,8 +219,8 @@ settings:
   enable_video_ctrl_bar_on_video_card: 喺影片卡片上顯示影片控制欄
   hover_video_card_delayed: 滑鼠停留喺影片卡片嗰陣遲啲進行影片預覽
   only_cover_video_preview: 淨係喺封面做影片預覽
-  show_video_card_recommend_tag: 顯示插件計算嘅推薦標籤
-  show_video_card_recommend_tag_desc: 顯示插件計算嘅標籤，好似「高讚」、「高互動」、「百萬播放」咁
+  show_video_card_recommend_tag: 顯示推薦標籤
+  show_video_card_recommend_tag_desc: 顯示影片卡片上嘅推薦標籤同推薦理由，好似「高讚」、「高互動」、「百萬播放」、「xx萬點讚」咁
   auto_hide_top_bar: 自動收埋頂欄
   always_use_transparent_top_bar: 頂欄始終使用透明(舊版)樣式
   show_top_bar_theme_color_gradient: 喺頂欄顯示主題色漸變（淨係喺深色模式下有效）

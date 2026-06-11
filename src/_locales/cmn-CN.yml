@@ -238,8 +238,8 @@ settings:
   enable_video_ctrl_bar_on_video_card: 在视频卡片上显示视频控制栏
   hover_video_card_delayed: 将鼠标悬停在视频卡片上时延迟视频预览
   only_cover_video_preview: 仅封面视频预览
-  show_video_card_recommend_tag: 显示插件计算的推荐标签
-  show_video_card_recommend_tag_desc: 显示插件计算的标签，如"高赞"、"高互动"、"百万播放"等
+  show_video_card_recommend_tag: 显示推荐标签
+  show_video_card_recommend_tag_desc: 显示视频卡片上的推荐标签和推荐理由，如"高赞"、"高互动"、"百万播放"、"xx万点赞"等
   auto_hide_top_bar: 自动隐藏顶栏
   video_page_top_bar_config: 视频页顶栏配置
   video_page_top_bar_config_desc: 控制视频页顶栏的显示时机。“鼠标显示”表示鼠标移入页面顶部时显示；“滚动显示”表示页面滚动时显示。
