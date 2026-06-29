@@ -1,10 +1,10 @@
 import type { Author, Video } from './types'
 
 const recommendTagPatterns = [
-  /高[赞讚]/,
-  /高互[动動]/,
-  /百[万萬]播放/,
-  /(?:\d+(?:\.\d+)?|[一二三四五六七八九十百千万萬亿億]+)[万萬亿億]?(?:播放|观看|觀看|点赞|點[讚赞]|点讚|[赞讚]|likes?|弹幕|彈幕|danmakus?|人[气氣])/i,
+  /^高[赞讚]$/,
+  /^高互[动動]$/,
+  /^百[万萬]播放$/,
+  /^(?:\d+(?:\.\d+)?|[一二三四五六七八九十百千万萬亿億]+)[万萬亿億]?(?:播放|观看|觀看|点赞|點[讚赞]|点讚|[赞讚]|likes?|弹幕|彈幕|danmakus?|人[气氣])$/i,
 ]
 
 export function isVideoCardRecommendTag(tag: string) {
