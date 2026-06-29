@@ -63,6 +63,10 @@
   .space-follow .follow-main .relation-content .items {
     grid-template-columns: 1fr !important;
     row-gap: 12px !important;
+    max-height: min(60vh, 520px) !important;
+    overflow-y: auto !important;
+    scrollbar-gutter: stable !important;
+    padding-right: 8px !important;
   }
 
   .space-follow .follow-main .relation-content .items > .item,
