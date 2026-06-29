@@ -60,6 +60,152 @@
     border-radius: 4px;
   }
 
+  .space-follow .follow-main .relation-content .items {
+    grid-template-columns: 1fr !important;
+    row-gap: 12px !important;
+  }
+
+  .space-follow .follow-main .relation-content .items > .item,
+  .space-follow .follow-main .relation-content .items > .item > .relation-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .space-follow .follow-main .relation-card {
+    align-items: center !important;
+    padding: 10px 0 !important;
+  }
+
+  .space-follow .follow-main .relation-card-avatar,
+  .space-follow .follow-main .relation-card-avatar .b-avatar {
+    flex: 0 0 48px !important;
+    width: 48px !important;
+    height: 48px !important;
+    overflow: visible !important;
+  }
+
+  .space-follow .follow-main .relation-card-avatar .b-avatar__canvas,
+  .space-follow .follow-main .relation-card-avatar .b-avatar__layers {
+    top: 0 !important;
+    left: 0 !important;
+    width: 48px !important;
+    height: 48px !important;
+    transform: none !important;
+  }
+
+  .space-follow .follow-main .relation-card-avatar .b-avatar__layer.center {
+    top: 0 !important;
+    left: 0 !important;
+    width: 48px !important;
+    height: 48px !important;
+    transform: none !important;
+    overflow: hidden !important;
+  }
+
+  .space-follow .follow-main .relation-card-avatar .b-avatar__layer.center .b-avatar__layer__res,
+  .space-follow .follow-main .relation-card-avatar .b-avatar__layer.center picture,
+  .space-follow .follow-main .relation-card-avatar .b-avatar__layer.center img {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  .space-follow .follow-main .relation-card-avatar .b-avatar__layer.center img {
+    display: block !important;
+    object-fit: cover !important;
+  }
+
+  .space-follow .follow-main .relation-card-avatar .b-avatar__layer:not(.center) {
+    top: auto !important;
+    right: -2px !important;
+    bottom: -2px !important;
+    left: auto !important;
+    width: 20px !important;
+    height: 20px !important;
+    transform: none !important;
+    overflow: hidden !important;
+  }
+
+  .space-follow .follow-main .relation-card-avatar .b-avatar__layer:not(.center) .b-avatar__layer__res {
+    width: 20px !important;
+    height: 20px !important;
+    position: absolute !important;
+    top: -2px !important;
+    left: -2px !important;
+  }
+
+  .space-follow .follow-main .relation-card-info {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) auto !important;
+    grid-template-areas:
+      "name action"
+      "sign action" !important;
+    align-items: center !important;
+    column-gap: 16px !important;
+    row-gap: 6px !important;
+    min-width: 0 !important;
+    height: auto !important;
+    margin-left: 12px !important;
+  }
+
+  .space-follow .follow-main .relation-card-info__uname {
+    grid-area: name !important;
+    width: auto !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+  }
+
+  .space-follow .follow-main .relation-card-info__sign {
+    grid-area: sign !important;
+    width: auto !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+  }
+
+  .space-follow .follow-main .relation-card-info-option {
+    grid-area: action !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    width: auto !important;
+    height: auto !important;
+    align-self: center !important;
+    justify-self: end !important;
+  }
+
+  .space-follow .follow-main .relation-card-info-option .follow-btn,
+  .space-follow .follow-main .relation-card-info-option .follow-btn-wrapper,
+  .space-follow .follow-main .relation-card-info-option .follow-btn__trigger {
+    width: 76px !important;
+    height: 28px !important;
+  }
+
+  .space-follow .follow-main .relation-card-info-option > .menu-popover {
+    display: flex !important;
+    flex: 0 0 24px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 24px !important;
+    height: 28px !important;
+  }
+
+  .space-follow .follow-main .relation-card-info-option > .menu-popover > .sic-BDC-more_vertical_fill {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 24px !important;
+    height: 24px !important;
+    margin: 0 !important;
+    cursor: pointer !important;
+  }
+
   .comment-bilibili-mask {
     position: fixed;
   }
